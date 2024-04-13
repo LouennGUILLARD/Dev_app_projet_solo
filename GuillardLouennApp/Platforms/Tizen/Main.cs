@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace LouennGuillardApp
+namespace GuillardLouennApp
 {
     internal class Program : MauiApplication
     {

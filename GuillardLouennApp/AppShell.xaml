@@ -1,0 +1,30 @@
+<Shell
+    x:Class="GuillardLouennApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GuillardLouennApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="GuillardLouennApp">
+
+    <TabBar>
+        <Tab Title="Home"
+             
+             >
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Page 2"
+             
+             >
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" />
+        </Tab>
+        <Tab Title="Page 3"
+             
+             >
+            <ShellContent ContentTemplate="{DataTemplate local:Page3}" />
+        </Tab>
+        <Tab Title="Page 4">
+            <ShellContent ContentTemplate="{DataTemplate local:Page4}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

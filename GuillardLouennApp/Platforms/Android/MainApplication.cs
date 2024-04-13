@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace LouennGuillardApp
+namespace GuillardLouennApp
 {
     [Application]
     public class MainApplication : MauiApplication

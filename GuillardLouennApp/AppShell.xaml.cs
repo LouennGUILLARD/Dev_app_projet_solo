@@ -1,4 +1,4 @@
-﻿namespace LouennGuillardApp
+﻿namespace GuillardLouennApp
 {
     public partial class AppShell : Shell
     {

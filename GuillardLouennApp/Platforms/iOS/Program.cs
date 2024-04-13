@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace LouennGuillardApp
+namespace GuillardLouennApp
 {
     public class Program
     {

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace LouennGuillardApp
+namespace GuillardLouennApp
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

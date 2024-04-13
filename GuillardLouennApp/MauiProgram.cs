@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace LouennGuillardApp
+namespace GuillardLouennApp
 {
     public static class MauiProgram
     {
