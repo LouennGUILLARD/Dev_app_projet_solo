@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="GuillardLouennApp.pageVideo">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            >
+            <Label
+                Text="Bienvenue sur la page de la vidéo"
+                Style="{StaticResource Headline}"
+            />
+            
+            <Label
+                Text="Origine de la vidéo : https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                Style="{StaticResource SubHeadline}"
+            />
+            
+            <toolkit:MediaElement 
+                x:Name="mediaElement"
+                Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                HeightRequest="300"
+                WidthRequest="400"
+                />
+            
+            <Button
+                Text="Retour"
+                Clicked="Button_back"
+                HorizontalOptions="Center"
+                Padding="50,0"
+            />
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>

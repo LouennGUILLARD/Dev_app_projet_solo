@@ -6,7 +6,6 @@
     <ScrollView>
         
         <VerticalStackLayout
-            Padding="30,0"
             Spacing="25">
             
             <Label
@@ -18,32 +17,40 @@
                 Text="Ceci est la page principale de l'application."
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                />
             
-            <HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="10"
+                Padding="10,0"
+                >
                 
                 <Image
-                    Source="dotnet_bot.png"
+                    Source="image1.png"
                     HeightRequest="185"
                     Aspect="AspectFit"
-                    SemanticProperties.Description="dot net bot in a race car number eight" />
+                    />
                 
                 <Image
-                    Source="dotnet_bot.png"
+                    Source="image2.png"
                     HeightRequest="185"
                     Aspect="AspectFit"
-                    SemanticProperties.Description="dot net bot in a race car number eight" />
+                    />
                 
             </HorizontalStackLayout>
-
-            
             
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                x:Name="goToGif"
+                Text="Aller voir le gif" 
+                Clicked="GoToGifPage"
+                HorizontalOptions="Center"
+                Padding="50,0" />
+            
+            <Button
+                x:Name="goToVideo"
+                Text="Aller voir la vidéo" 
+                Clicked="GoToVideoPage"
+                HorizontalOptions="Center"
+                Padding="50,0" />
             
         </VerticalStackLayout>
     </ScrollView>

@@ -1,4 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Hosting;
+using CommunityToolkit.Maui;
 
 namespace GuillardLouennApp
 {
@@ -13,10 +17,11 @@ namespace GuillardLouennApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                })
+                .UseMauiCommunityToolkitMediaElement();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
