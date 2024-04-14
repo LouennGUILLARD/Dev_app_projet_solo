@@ -52,18 +52,6 @@
                 HorizontalOptions="Center"
                 Padding="50,0" />
             
-            <Button
-                x:Name="btnAfficherDonnees"
-                Text="Afficher les données"
-                Clicked="BtnAfficherDonnees_Clicked"
-                HorizontalOptions="Center"
-                Padding="50,0" />
-
-            <Label
-                x:Name="lblDonnees"
-                Style="{StaticResource SubHeadline}"
-                />
-            
         </VerticalStackLayout>
     </ScrollView>
 

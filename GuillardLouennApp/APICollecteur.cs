@@ -12,7 +12,7 @@ namespace GuillardLouennApp
         {
             _client = new HttpClient
             {
-                BaseAddress = new Uri("https://api.sampleapis.com/switch/games")
+                BaseAddress = new Uri("https://api.sampleapis.com/coffee/hot")
             };
         }
 
@@ -22,13 +22,6 @@ namespace GuillardLouennApp
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
-        
-        public async Task AfficherDonneesAsync(string endpoint)
-        {
-            var donnees = await GetAsync(endpoint);
-            Console.WriteLine(donnees);
-        }
-        
         
     }
 }

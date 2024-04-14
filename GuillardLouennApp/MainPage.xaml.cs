@@ -20,12 +20,6 @@
         {
             Navigation.PushAsync(new pageVideo());
         }
-        
-        private async void BtnAfficherDonnees_Clicked(object sender, EventArgs e)
-        {
-            var donnees = await _api.GetAsync(null);
-            lblDonnees.Text = donnees;
-        }
     }
 
 }

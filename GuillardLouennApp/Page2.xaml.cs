@@ -8,21 +8,28 @@ namespace GuillardLouennApp;
 
 public partial class Page2 : ContentPage
 {
+    private readonly APICollecteur _api;
+    
     public Page2()
     {
         InitializeComponent();
+        _api = new APICollecteur();
+        LoadData();
     }
     
-    int count = 0;
-    private void OnCounterClicked(object sender, EventArgs e)
+    private async void LoadData()
     {
-        count++;
+        var donnees = await _api.GetAsync(null);
+        var donneesModifier = donnees.Trim('[',']');
+        var items = donneesModifier.Split(new[] { '{' }, StringSplitOptions.RemoveEmptyEntries);
+        listView.ItemsSource = items;
+    }
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+    private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem != null)
+        {
+            DisplayAlert("Item selectionner", e.SelectedItem.ToString(), "OK");
+        }
     }
 }
