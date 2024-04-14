@@ -8,21 +8,23 @@
 
     <TabBar>
         <Tab Title="Home"
-             
+             Icon="home.svg"
              >
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         <Tab Title="Page 2"
-             
+             Icon="layout.svg"
              >
             <ShellContent ContentTemplate="{DataTemplate local:Page2}" />
         </Tab>
         <Tab Title="Page 3"
-             
+             Icon="alert_octagon.svg"
              >
             <ShellContent ContentTemplate="{DataTemplate local:Page3}" />
         </Tab>
-        <Tab Title="Page 4">
+        <Tab Title="Page 4"
+             Icon="alert_triangle.svg"
+             >
             <ShellContent ContentTemplate="{DataTemplate local:Page4}" />
         </Tab>
     </TabBar>

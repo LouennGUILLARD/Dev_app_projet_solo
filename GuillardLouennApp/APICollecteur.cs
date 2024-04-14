@@ -23,12 +23,5 @@ namespace GuillardLouennApp
             return await response.Content.ReadAsStringAsync();
         }
         
-        public async Task AfficherDonneesAsync(string endpoint)
-        {
-            var donnees = await GetAsync(endpoint);
-            Console.WriteLine(donnees);
-        }
-        
-        
     }
 }
