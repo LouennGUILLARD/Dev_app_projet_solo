@@ -12,7 +12,7 @@ namespace GuillardLouennApp
         {
             _client = new HttpClient
             {
-                BaseAddress = new Uri("https://api.sampleapis.com/switch/games")
+                BaseAddress = new Uri("https://api.sampleapis.com/coffee/hot")
             };
         }
 
