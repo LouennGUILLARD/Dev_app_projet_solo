@@ -45,6 +45,13 @@
                 HorizontalOptions="Center"
                 Padding="50,0" />
             
+            <Button
+                x:Name="goToVideo"
+                Text="Aller voir la vidéo" 
+                Clicked="GoToVideoPage"
+                HorizontalOptions="Center"
+                Padding="50,0" />
+            
         </VerticalStackLayout>
     </ScrollView>
 

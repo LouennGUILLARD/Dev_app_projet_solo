@@ -12,6 +12,11 @@
         {
             Navigation.PushAsync(new pageGif());
         }
+        
+        private void GoToVideoPage(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new pageVideo());
+        }
     }
 
 }
