@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuillardLouennApp.pageGif">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            >
+            <Label
+                Text="Bienvenue sur la page du gifs"
+                Style="{StaticResource Headline}"
+                />
+            
+            <Label
+                Text="Origine du gif : https://tenor.com/fr/view/gakkou-gurashi-hello-hi-wave-gif-19991696"
+                Style="{StaticResource SubHeadline}"
+                />
+            
+            <Image
+                x:Name="imgLoader"
+                Source="gakkou_gurashi_hello.gif"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                SemanticProperties.Description="https://tenor.com/fr/view/gakkou-gurashi-hello-hi-wave-gif-19991696"
+                />
+            
+            <Button
+                Text="Retour"
+                Clicked="Button_back"
+                HorizontalOptions="Center"
+                Padding="50,0"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
